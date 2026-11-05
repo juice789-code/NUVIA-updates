@@ -1,0 +1,63 @@
+name: Publish verified NUVIA update
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['release-input/**']
+permissions: {}
+concurrency:
+  group: nuvia-public-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'juice789-code/NUVIA-updates'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify APK, publish release, update channel
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, json, os, pathlib, re, subprocess
+          root=pathlib.Path('release-input')
+          meta=json.loads((root/'release.json').read_text())
+          version=meta['versionName']
+          assert re.fullmatch(r'[0-9]{1,4}\.[0-9]{1,4}\.[0-9]{1,4}',version)
+          assert meta['package']=='ru.quietmusic.player' and meta['versionCode']>0 and meta['minSdk']==23
+          filename='NUVIA-'+version+'.apk'
+          apk=root/filename
+          assert apk.stat().st_size==meta['size'] and 1024<meta['size']<=100*1024*1024
+          assert hashlib.sha256(apk.read_bytes()).hexdigest()==meta['sha256']
+          assert meta['url']=='https://github.com/juice789-code/NUVIA-updates/releases/download/v'+version+'/'+filename
+          sdk=pathlib.Path(os.environ['ANDROID_HOME'])/'build-tools'/'35.0.0'
+          signature=subprocess.check_output([str(sdk/'apksigner'),'verify','--verbose','--print-certs',str(apk)],text=True)
+          certificates=re.findall(r'^Signer #\d+ certificate SHA-256 digest: ([0-9a-fA-F]+)$',signature,re.M)
+          assert certificates==['c1e2158cb21ebac4d9295b34224d8da675005c7d2c6f81599dee59942d2d64c3']
+          assert 'Verified using v2 scheme (APK Signature Scheme v2): true' in signature
+          badging=subprocess.check_output([str(sdk/'aapt'),'dump','badging',str(apk)],text=True)
+          package=next(line for line in badging.splitlines() if line.startswith('package: '))
+          assert all(value in package for value in ["name='ru.quietmusic.player'","versionCode='"+str(meta['versionCode'])+"'","versionName='"+version+"'"])
+          assert 'application-debuggable' not in badging and 'application-testOnly' not in badging
+          repo='juice789-code/NUVIA-updates'
+          assert subprocess.check_output(['gh','api','repos/'+repo,'--jq','.private'],text=True).strip()=='false'
+          checksums=root/'SHA256SUMS.txt'
+          checksums.write_text(meta['sha256']+'  '+filename+'\n')
+          subprocess.run(['gh','release','create','v'+version,str(apk),str(checksums),'--repo',repo,'--target',os.environ['GITHUB_SHA'],'--title','NUVIA '+version,'--notes-file',str(root/'RELEASE_NOTES.md'),'--prerelease'],check=True)
+          endpoint='repos/'+repo+'/contents/update.json'
+          old=subprocess.run(['gh','api',endpoint],text=True,capture_output=True)
+          payload={'message':'Point update channel to verified NUVIA '+version,'content':base64.b64encode((json.dumps(meta,ensure_ascii=False,indent=2)+'\n').encode()).decode()}
+          if old.returncode==0:
+              prior=json.loads(old.stdout)
+              previous=json.loads(base64.b64decode(prior['content']))
+              assert meta['versionCode']>previous['versionCode'], 'Channel version must increase'
+              payload['sha']=prior['sha']
+          else:
+              assert '404' in old.stderr,old.stderr
+          subprocess.run(['gh','api','--method','PUT',endpoint,'--input','-'],input=json.dumps(payload),text=True,check=True)
+          PY
