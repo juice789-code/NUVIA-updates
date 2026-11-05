@@ -1,10 +1,10 @@
 {
   "package": "ru.quietmusic.player",
-  "versionCode": 6,
-  "versionName": "0.4.0",
+  "versionCode": 7,
+  "versionName": "0.4.1",
   "minSdk": 23,
-  "size": 8908343,
-  "sha256": "cac56dfe902e152a6a6ee2cdcf668fbc1c2064c3c9f71e66c550e08c5985e035",
-  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.4.0/NUVIA-0.4.0.apk",
-  "notes": "Автокэш прослушиваемых треков: настройки Wi-Fi/мобильной сети и лимита памяти. Проверка и скачивание следующих обновлений внутри NUVIA без входа в GitHub. Установку подтверждает Android."
+  "size": 8923027,
+  "sha256": "0133e8765c97843a5ef94e8d46ff4c7005566abb954e67e9ff4731ef14888773",
+  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.4.1/NUVIA-0.4.1.apk",
+  "notes": "Новая страница настроек в стиле NUVIA с плавными переходами. Отдельные страницы автокэша, обновлений и памяти. О приложении: Команда NUVIA, версия и музыка без рекламы. Добровольная поддержка через Т-Банк с копированием реквизитов."
 }
