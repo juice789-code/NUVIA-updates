@@ -1,10 +1,12 @@
 {
   "package": "ru.quietmusic.player",
-  "versionCode": 8,
-  "versionName": "0.5.0",
+  "versionName": "0.5.1",
+  "versionCode": 9,
   "minSdk": 23,
-  "size": 8939802,
-  "sha256": "0bb66f58148246d0aad63f41a07801003ec267a452bfe0c89d666f838a4ea473",
-  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.5.0/NUVIA-0.5.0.apk",
-  "notes": "Новый экран загрузки и проверки обновления\nАвтокэш без лимита объёма, ручная очистка музыки\nОчистка медиатеки и плейлистов, сверка импорта ВК\nПоиск музыки ВК через сайт и выбор результатов\nНастоящие обложки и жанры из тегов, пресеты эквалайзера"
+  "size": 8951349,
+  "sha256": "d629ef362595c2c0e8cf5ce67eeb6f39f69f860eb9983eb2afad0eb2e7d316d2",
+  "certificateSha256": "c1e2158cb21ebac4d9295b34224d8da675005c7d2c6f81599dee59942d2d64c3",
+  "file": "NUVIA-0.5.1.apk",
+  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.5.1/NUVIA-0.5.1.apk",
+  "notes": "Меняющийся баннер и карточки плейлистов\nНовый поиск с прослушиванием и добавлением\nИмпорт только «Моей музыки» ВК\nОбновление обложек из интернета\nКрасивые окна и обратная связь\nДоступность функций зависит от сайта ВК; требуется проверка на телефоне."
 }
