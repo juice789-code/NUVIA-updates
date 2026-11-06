@@ -1,12 +1,12 @@
 {
   "package": "ru.quietmusic.player",
-  "versionName": "0.6.0",
-  "versionCode": 12,
+  "versionName": "0.6.1",
+  "versionCode": 13,
   "minSdk": 23,
-  "size": 8981005,
-  "sha256": "ea10e5bb36c743fec239de51a2b2df626de2bfb38fa700fb915a5dab72ebaf6f",
+  "size": 8986269,
+  "sha256": "ae3b7f838919abd9c08c2ffd38f0dc5abc8674522469390976abc0d47efc5cf7",
   "certificateSha256": "c1e2158cb21ebac4d9295b34224d8da675005c7d2c6f81599dee59942d2d64c3",
-  "file": "NUVIA-0.6.0.apk",
-  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.0/NUVIA-0.6.0.apk",
-  "notes": "Поиск и «Моя музыка ВК» внутри NUVIA\nПодборки: чарт и новинки ВК с прослушиванием и добавлением\nСтраница ВК открывается только для входа\nПовтор запроса при ошибке и управление входом в настройках\nДоступ зависит от ВК; требуется проверка на телефоне"
+  "file": "NUVIA-0.6.1.apk",
+  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.1/NUVIA-0.6.1.apk",
+  "notes": "Компактный поиск с автоматическим запросом\nПесни обычным списком: нажатие сразу включает трек\nСвоя музыка ВК без обязательного копирования\nМини-плеер, очередь и возврат к результатам\nМеню трека: медиатека, свой плейлист, загрузка\nДоступ ВК требует проверки на телефоне"
 }
