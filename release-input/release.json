@@ -1,12 +1,12 @@
 {
   "package": "ru.quietmusic.player",
-  "versionName": "0.5.3",
-  "versionCode": 11,
+  "versionName": "0.6.0",
+  "versionCode": 12,
   "minSdk": 23,
-  "size": 8966862,
-  "sha256": "59cff75ac8b79ac690909f275777a5e9bac92ae7731fc648966a8c5d7a801a3f",
+  "size": 8981005,
+  "sha256": "ea10e5bb36c743fec239de51a2b2df626de2bfb38fa700fb915a5dab72ebaf6f",
   "certificateSha256": "c1e2158cb21ebac4d9295b34224d8da675005c7d2c6f81599dee59942d2d64c3",
-  "file": "NUVIA-0.5.3.apk",
-  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.5.3/NUVIA-0.5.3.apk",
-  "notes": "Автоматическое обновление ссылок обложек через вход ВК\nИсправлена обработка ссылок с параметрами и очередь картинок\nНовый экран эквалайзера: график, пресеты и вертикальные полосы\nСтатус загрузки и повтор по нажатию на обложку\nДоступ к обложкам зависит от сеанса и ответа ВК"
+  "file": "NUVIA-0.6.0.apk",
+  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.0/NUVIA-0.6.0.apk",
+  "notes": "Поиск и «Моя музыка ВК» внутри NUVIA\nПодборки: чарт и новинки ВК с прослушиванием и добавлением\nСтраница ВК открывается только для входа\nПовтор запроса при ошибке и управление входом в настройках\nДоступ зависит от ВК; требуется проверка на телефоне"
 }
