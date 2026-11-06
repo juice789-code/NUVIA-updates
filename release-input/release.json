@@ -1,12 +1,12 @@
 {
   "package": "ru.quietmusic.player",
-  "versionName": "0.6.2",
-  "versionCode": 14,
+  "versionName": "0.6.3",
+  "versionCode": 15,
   "minSdk": 23,
-  "size": 8993784,
-  "sha256": "c9c43125a39acb29ef7186b8870110124b86fa56812d02691db595e864ef71b0",
+  "size": 8995321,
+  "sha256": "b9bd23b572c1e6dd4a69f86b7c88dcc84f4d4d29b6a301699d2a34b54b411269",
   "certificateSha256": "c1e2158cb21ebac4d9295b34224d8da675005c7d2c6f81599dee59942d2d64c3",
-  "file": "NUVIA-0.6.2.apk",
-  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.2/NUVIA-0.6.2.apk",
-  "notes": "Плейлисты: Мои, ВК и Подборки\nПлейлисты аккаунта ВК открываются внутри NUVIA\nПрослушивание без обязательного копирования\nДобавление из поиска сразу в свой плейлист\nКомпактная шапка и отдельный экран плейлиста\nДоступ к данным ВК требует проверки на телефоне"
+  "file": "NUVIA-0.6.3.apk",
+  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.3/NUVIA-0.6.3.apk",
+  "notes": "Исправлена обработка адреса списка плейлистов\nОжидание динамической загрузки карточек ВК\nИсправлен запрос страницы чартов и разбор её данных\nПустой список отличается от ошибки\nПри ошибке показывается безопасный код"
 }
