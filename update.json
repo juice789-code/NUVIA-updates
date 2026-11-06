@@ -1,12 +1,12 @@
 {
   "package": "ru.quietmusic.player",
-  "versionName": "0.6.4",
-  "versionCode": 16,
+  "versionName": "0.6.5",
+  "versionCode": 17,
   "minSdk": 23,
-  "size": 9000699,
-  "sha256": "01f6253da29b553d64f91d5d068e731c375e1683cf5514ab98a716db67761313",
+  "size": 9003462,
+  "sha256": "e291e0995d5deff065cf19a4aad4ea18a308aff51f86725724a5d6faf727dba1",
   "certificateSha256": "c1e2158cb21ebac4d9295b34224d8da675005c7d2c6f81599dee59942d2d64c3",
-  "file": "NUVIA-0.6.4.apk",
-  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.4/NUVIA-0.6.4.apk",
-  "notes": "Исправлена обработка переходов ВК\nОбложки ВК: новые форматы и запрос конкретного трека\nЗапасной поиск MusicBrainz / Cover Art Archive\nАвтопоиск без ручного обновления\nКанал NUVIA в «О приложении»\nДоступность ВК и внешнего сервиса требует проверки на телефоне"
+  "file": "NUVIA-0.6.5.apk",
+  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.5/NUVIA-0.6.5.apk",
+  "notes": "Обложка сохраняется вместе с добавленной песней\nЗапасной поиск Deezer с точным совпадением\nПроверена реальная обложка «Моя Сирин»\nРасширен разбор подборок ВК\nРабота подборок на аккаунте ещё требует проверки"
 }
