@@ -1,12 +1,12 @@
 {
   "package": "ru.quietmusic.player",
-  "versionName": "0.6.3",
-  "versionCode": 15,
+  "versionName": "0.6.4",
+  "versionCode": 16,
   "minSdk": 23,
-  "size": 8995321,
-  "sha256": "b9bd23b572c1e6dd4a69f86b7c88dcc84f4d4d29b6a301699d2a34b54b411269",
+  "size": 9000699,
+  "sha256": "01f6253da29b553d64f91d5d068e731c375e1683cf5514ab98a716db67761313",
   "certificateSha256": "c1e2158cb21ebac4d9295b34224d8da675005c7d2c6f81599dee59942d2d64c3",
-  "file": "NUVIA-0.6.3.apk",
-  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.3/NUVIA-0.6.3.apk",
-  "notes": "Исправлена обработка адреса списка плейлистов\nОжидание динамической загрузки карточек ВК\nИсправлен запрос страницы чартов и разбор её данных\nПустой список отличается от ошибки\nПри ошибке показывается безопасный код"
+  "file": "NUVIA-0.6.4.apk",
+  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.4/NUVIA-0.6.4.apk",
+  "notes": "Исправлена обработка переходов ВК\nОбложки ВК: новые форматы и запрос конкретного трека\nЗапасной поиск MusicBrainz / Cover Art Archive\nАвтопоиск без ручного обновления\nКанал NUVIA в «О приложении»\nДоступность ВК и внешнего сервиса требует проверки на телефоне"
 }
