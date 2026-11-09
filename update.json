@@ -1,12 +1,12 @@
 {
   "package": "ru.quietmusic.player",
-  "versionName": "0.6.6",
-  "versionCode": 18,
+  "versionName": "0.6.8",
+  "versionCode": 20,
   "minSdk": 23,
-  "size": 9004448,
-  "sha256": "0e3bcf87df2e7c5fbc1677be7091e04db4245f44f685d634255e02cc2a42b4a3",
+  "size": 9015955,
+  "sha256": "f2f510dadd1e6d4f884c90e6b5092393174e3b6d491d3f129cf125ed12e8a9e9",
   "certificateSha256": "c1e2158cb21ebac4d9295b34224d8da675005c7d2c6f81599dee59942d2d64c3",
-  "file": "NUVIA-0.6.6.apk",
-  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.6/NUVIA-0.6.6.apk",
-  "notes": "Первые треки ВК доступны во время загрузки списка\nСохранение уже загруженных треков в NUVIA\nСохранённые обложки остаются при обновлении"
+  "file": "NUVIA-0.6.8.apk",
+  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.8/NUVIA-0.6.8.apk",
+  "notes": "Первая страница музыки без ожидания всего каталога\nИстория поиска и переход к исполнителю\nГрупповое добавление песен\nДрузья ВК и музыка профиля — пробный режим\nЛокальное сохранение обложек"
 }
