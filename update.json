@@ -1,12 +1,12 @@
 {
   "package": "ru.quietmusic.player",
-  "versionName": "0.6.9",
-  "versionCode": 21,
+  "versionName": "0.6.10",
+  "versionCode": 22,
   "minSdk": 23,
-  "size": 9016380,
-  "sha256": "2e7e6fbec57df43a218215b95e22cfc62a028f30b165b61d4080fb02ea9ca2f6",
+  "size": 9017758,
+  "sha256": "221f8c4bf96c9d18b5c6ea95ab6b7b061e100010cd3d22f16da09ad058fa3bc8",
   "certificateSha256": "c1e2158cb21ebac4d9295b34224d8da675005c7d2c6f81599dee59942d2d64c3",
-  "file": "NUVIA-0.6.9.apk",
-  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.9/NUVIA-0.6.9.apk",
-  "notes": "В «Моей музыке» появились быстрые переходы к плейлистам ВК и друзьям.\nУбрана пауза между порциями уже полученного списка.\nИсправлен разбор одного из форматов треков ВК и их обложек."
+  "file": "NUVIA-0.6.10.apk",
+  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.6.10/NUVIA-0.6.10.apk",
+  "notes": "Прокрутка списка, поиска и плейлистов требует меньше работы на каждом кадре.\nНедостающие обложки запрашиваются отдельно после появления списка. При недоступной картинке Deezer пробуется второй источник.\nСообщение об ошибке в «Друзьях ВК» остаётся на экране и позволяет повторить запрос."
 }
