@@ -1,12 +1,10 @@
 {
   "package": "ru.quietmusic.player",
-  "versionCode": 24,
-  "versionName": "0.7.0",
+  "versionCode": 25,
+  "versionName": "0.7.1",
   "minSdk": 23,
-  "size": 11090621,
-  "sha256": "23543334e59b05209c81a45369b88347d9dd34e922bed946bae3a2faf35a4e93",
-  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.7.0/NUVIA-0.7.0.apk",
-  "notes": "Быстрее запуск треков при прокрутке «Моей музыки ВК». Поиск по своим трекам и всему ВК. Очередь скачивания с миниобложками, паузой и пропуском. Сканирование музыки на телефоне. Полноэкранный текст и обновлённый плеер.",
-  "certificateSha256": "c1e2158cb21ebac4d9295b34224d8da675005c7d2c6f81599dee59942d2d64c3",
-  "file": "NUVIA-0.7.0.apk"
+  "size": 11091043,
+  "sha256": "275bdbdf33d89e79a42935c13387c88f2a6ea638e6638d7986be1f78fb99a488",
+  "url": "https://github.com/juice789-code/NUVIA-updates/releases/download/v0.7.1/NUVIA-0.7.1.apk",
+  "notes": "Исправлена остановка музыки при временном обрыве сети. Если у трека ВК закончился буфер, плеер повторяет загрузку и продолжает с того же места после восстановления связи."
 }
