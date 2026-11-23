@@ -2,9 +2,13 @@
 
 NUVIA — бесплатный музыкальный плеер без рекламы. Слушайте свою музыку из ВК, добавляйте песни с телефона и сохраняйте треки для прослушивания без интернета.
 
-**[Скачать NUVIA 0.7.0 для Android](https://github.com/juice789-code/NUVIA-updates/releases/download/v0.7.0/NUVIA-0.7.0.apk)** · [Все выпуски](https://github.com/juice789-code/NUVIA-updates/releases)
+**[Скачать NUVIA 0.7.1 для Android](https://github.com/juice789-code/NUVIA-updates/releases/download/v0.7.1/NUVIA-0.7.1.apk)** · [Все выпуски](https://github.com/juice789-code/NUVIA-updates/releases)
 
 Если NUVIA уже установлена, откройте **Настройки → Обновления NUVIA → Проверить обновление**. При первой установке скачайте APK по ссылке выше и откройте его на телефоне.
+
+## Что изменилось в 0.7.1
+
+При кратком обрыве сети плеер повторяет загрузку и продолжает трек с места остановки, когда связь возвращается.
 
 ## Что изменилось в 0.7.0
 
